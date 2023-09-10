@@ -2,9 +2,9 @@
 const form = document.querySelector('#formulario')
 
 form.addEventListener('submit', function (e) {
-    e.preventDefault() //esse (e) é de event, parando o envio do evento
+    e.preventDefault() //Não permite que a página seja atualizada quando o formulário é enviado
     const inputPeso = e.target.querySelector('#peso') //vai informar o elemento que está recebendo o evento com o .target
-    const inputAltura = e.target.querySelector('#altura')
+    const inputAltura = e.target.querySelector('#altura') // .target vai assegurar que o elemento está vindo do receptor do evento e no caso dá página html
 
     const peso = Number(inputPeso.value)
     const altura = Number(inputAltura.value)
@@ -60,10 +60,10 @@ function setResultado (msg, isValid) {
     if (isValid) {
         p.classList.add('paragrafoResultado') //se válido ele vai atribuir essa classe ao paragrafo
     } else {
-        p.classList.add('bad') //se não for válido ele vai atribuir essa classe
+        p.classList.add('bad') //se não for válido ele vai atribuir essa classe (classList.add adiciona uma ou mais classes à um elemento)
     }
 
     p.innerHTML = msg
-    resultado.appendChild(p)
+    resultado.appendChild(p) //adicionando o elemento p como elemento filho de resultado para que o conteúdo de p apareça no elemento resultado
     
 }
