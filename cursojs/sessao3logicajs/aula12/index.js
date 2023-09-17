@@ -9,7 +9,7 @@ for (let i = 500; i <= 502; i++) {
     console.log(`Linha ${i}`)    
 }
 console.log('--------')
-//Posso indicar de quanto é o saldo da variável i+=2 pulandop de 2 em 2 e assim por diante
+//Posso indicar de quanto é o salto da variável i+=2 pulando de 2 em 2 e assim por diante
 for (let i = 0; i <= 8; i+=2) {
     console.log(`Linha ${i}`)    
 }
