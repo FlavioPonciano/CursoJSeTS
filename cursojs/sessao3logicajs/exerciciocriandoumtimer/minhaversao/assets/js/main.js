@@ -80,3 +80,4 @@ function zerarTempo () {
 function formataTempo(tempo) {
     return tempo < 10 ? `0${tempo}` : tempo
 }
+//Programa Finalizado
