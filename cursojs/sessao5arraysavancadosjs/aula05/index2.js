@@ -47,4 +47,5 @@ const comIds = pessoas.map(function(objeto, indice) {
 
 
 
+
 console.log(nomes, /*idades,*/ idades2, idades3, comIds, comIds2 )
