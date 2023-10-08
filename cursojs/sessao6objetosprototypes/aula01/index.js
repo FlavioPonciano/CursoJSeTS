@@ -70,7 +70,7 @@ console.log(p1.nomeCompleto2())
 
 //Constructor Function:
 function DadosPessoa(nome, sobrenome) {
-    this.nome = nome
+    this.nome = nome //Utilizando this a variável se torna pública 
     this.sobrenome = sobrenome
 
     Object.freeze(this) //Travando a alteração de todos os valores do objetos criados, mesmo tentando mudar ele não será mudado
