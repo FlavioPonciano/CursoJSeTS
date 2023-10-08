@@ -4,7 +4,7 @@ function Produto(nome, preco, estoque) {
     this.nome = nome
     this.preco = preco
 
-    
+    //Não posso utilizar this.estoque pois vai gerar um loop dentro das prorpriedades do objeto
     //Caso queira trabalhar com as propriedades do objeto de forma privada posso gerar um outra variável que recebe o valor
     let estoquePrivado = estoque    
 
